@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form </title>
+        <link rel="stylesheet" href="registration.css">
+<!------------------------------------------->
+<script>    
+        function validate() {    
+            var name = document.registration_form.name;    
+            var email = document.registration_form.email;    
+            var password = document.registration_form.password;    
+            var phoneno = document.registration_form.phoneno;    
+            var gender = document.registration_form.gender;    
+            /*var favsub = document.registration_form.favsub; */   
+            var favcolor = document.registration_form.favcolor;    
+    
+            if (name.value.length <= 0) {    
+                alert("Name is required");    
+                name.focus();    
+                return false;    
+            }    
+            if (email.value.length <= 0) {    
+                alert("Email is required");    
+                email.focus();    
+                return false;    
+            }    
+            if (password.value.length <= 0) {    
+                alert("Password is required");    
+                password.focus();    
+                return false;    
+            }    
+            if (phoneno.value.length <= 0) {    
+                alert("Phone no. is required");    
+                phoneno.focus();    
+                return false;    
+            }   
+	
+            if (gender.value == "select one") {    
+                alert("Gender is required");    
+                radio.focus();    
+                return false;    
+            }
+
+               
+           
+ 
+       
+            if (favcolor.value == "select favcolor") {    
+                alert("Favourite color is required");    
+                favcolor.focus();    
+                return false;    
+            } 
+            return true;    
+        }    
+    </script>  
+<!------------------------------------------->  
+    </head>
+<!------------------------------------------->
+    <body style="background-color:white">
+     <header><h1>Registration Form</h1> </header><br>
+<!------------------------------------------->
+        <form method="" action="" name="registration_form" onsubmit="return validate()" >
+<!------------------------------------------->
+            <table align="center">
+<!------------------------------------------->
+            <tr>
+	<td><b>Name  :</b></td>
+                <td><input type="text" placeholder="Enter name" name="name"/></td>
+            </tr>
+<!------------------------------------------->   
+            <tr>         
+                <td><b>Email  :</b></td>
+                <td><input type="email" placeholder="@gmail.com" name="email"/></td>
+            </tr>
+<!------------------------------------------->  
+            <tr>          
+                <td><b>Password  :</b></td>
+                <td><input type="password" placeholder="Enter password" name="password"/></td>
+            </tr>
+<!------------------------------------------->   
+            <tr>
+                <td><b>Phone no.  :</b></td>
+                <td><input type="tel" placeholder="Enter phone no." name="phoneno"/></td>
+            </tr>
+<!------------------------------------------->         
+            <tr>   
+                <td> <b>Gender:</b> </td> 
+                <td>  
+ <input type="radio" name="gender" value="select one" name="gender" checked/> select one
+                       <input type="radio" name="gender" value="male" name="gender"/> male 
+                       <input type="radio" name="gender" value="female" name="gender"/> female
+                </td>
+            </tr> 
+<!------------------------------------------->
+            <tr>
+                <td><b>Favourite subject:</b></td>
+                <td>     
+                        <input type="checkbox" value="math" name="favsub" /> math  
+                        <input type="checkbox" value="science" name="favsub"/> science  
+                        <input type="checkbox" value="physics" name="favsub"/> physics 
+                </td>
+            </tr>
+<!------------------------------------------->
+            <tr>
+                 <td><b>Favourite color:</b></td>
+                     <td>                     
+                        <select name="favcolor">
+                          <option value="select favcolor">select favcolor</option>
+                          <option value="1">red</option> 
+                          <option value="2">orange</option>
+                          <option value="3">pink</option>
+                          <option value="4">yellow</option>
+                          <option value="5">green</option>
+                          <option value="6">blue</option>
+                          <option value="7">white</option>
+                          <option value="8">black</option>
+                          <option value="9">babypink</option>
+                          <option value="10">golden</option>
+                          <option value="11">silver</option>
+                       </select>
+                     </td>
+            </tr>
+      
+<!------------------------------------------->
+            <tr>
+                   <td><b>About:</b></td>
+                   <td><textarea></textarea></td>
+            </tr>      
+<!------------------------------------------->
+          <tr>
+                    <td colspan="2"><center><input type="submit" name="submit"  ></center></td>                              
+            </tr>       
+<!------------------------------------------->   
+           <tr>         
+                    <td colspan="2"><center><input type="reset" name="reset" ></center></td>
+            </tr>
+
+<!------------------------------------------->
+           </table>
+<!------------------------------------------->
+                    <!--  <center><input type="submit" name="submit"  ></center>  <br>    
+                    <center><input type="reset" name="reset" ></center>-->
+<!------------------------------------------->
+        </form>
+<!------------------------------------------->
+    </body>
+</html>
+ 
+<!--------------------------------------------------------------------------------------------------------The End---------------------------------------------------------------------------------------------------->
+
+ 
